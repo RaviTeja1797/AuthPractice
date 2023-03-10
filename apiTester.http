@@ -1,0 +1,40 @@
+GET http://localhost:3000/
+###
+
+POST http://localhost:3000/add-employee-records/
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InJhamVzaDEyMyIsImlhdCI6MTY3ODQyMjg4OX0.e0PfX5PJtAXLY4PnNkg6E6hhtuLrPJ3EKjFwwnKgvCA
+
+{
+    "name":"Ranadheer",
+    "salary":"15550"
+}
+
+###
+
+
+GET http://localhost:3000/create-admin-table/
+###
+
+POST http://localhost:3000/add-admin-record/
+Content-Type: application/json 
+
+{
+    "name" : "Rajesh",
+    "username": "rajesh123",
+    "password" : "Rajesh123",
+    "salary" : "40000"
+}
+###
+
+POST http://localhost:3000/admin_login/
+Content-Type: application/json
+
+{
+    "username" : "rajesh123",
+    "password": "Rajesh123"
+}
+###
+
+GET http://localhost:3000/get-employee-details/2
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InJhamVzaDEyMyIsImlhdCI6MTY3ODQyMjg4OX0.e0PfX5PJtAXLY4PnNkg6E6hhtuLrPJ3EKjFwwnKgvCA
